@@ -13,12 +13,5 @@ jobs:
         node-version: [10.x]
 
     steps:
-      - name: Install dependencies
-        run: |
-          cd ..
-          cd ..
-      - name: Hexo Action
-        uses: sma11black/hexo-action@v1.0.4
-        with:
-          user_name: github-actions[bot]
-          user_email: liuong.2020@qq.com
+      - name: GitHub Action for Hexo
+        uses: heowc/action-hexo@1.0.2-add-metadata
