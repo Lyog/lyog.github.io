@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Hexo Action
-        uses: sma11black/hexo-action@v1.0.1
+        uses: sma11black/hexo-action@v1.0.4
         with:
           user_name: github-actions[bot]
           user_email: liuong.2020@qq.com
