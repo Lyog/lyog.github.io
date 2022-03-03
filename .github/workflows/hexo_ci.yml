@@ -13,12 +13,8 @@ jobs:
         node-version: [12.x]
 
     steps:
-      - uses: actions/checkout@v1
-
       - name: Hexo Action
-        uses: sma11black/hexo-action@v1.0.4
+        uses: sma11black/hexo-action@v1.0.1
         with:
           user_name: github-actions[bot]
           user_email: liuong.2020@qq.com
-          deploy_key: default is 
-          commit_msg:  optional
