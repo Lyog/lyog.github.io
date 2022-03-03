@@ -14,6 +14,8 @@ jobs:
 
     steps:
       - name: Hexo Action
+        env:
+          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
         uses: sma11black/hexo-action@v1.0.4
         with:
           user_name: github-actions[bot]
