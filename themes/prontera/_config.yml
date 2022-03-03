@@ -1,0 +1,36 @@
+favicon: /favicon.ico
+
+
+# Nav Menus
+menu:
+    主页: /
+    归档: /archives/
+
+# Nav Shortcut Icons
+# nav_icons:
+    # - ['/images/github.svg', 'https://github.com/Lyog']
+    # - ['/images/rss.svg', '/atom.xml']
+
+# Friend Links
+friend_links:
+    - ['关于我', '', 'https://liuyong.cc/about/']
+    
+
+
+# About
+about_info:
+    name: "Lyog"
+    bio: "我想出门晒太阳"
+    avatar: "/images/avatar.png"
+
+# Comment
+# e.g disqus: seansun
+disqus: 
+duoshuo: 
+
+# Analytics
+google_analytics: 
+tencent_analytics: 
+ 
+# Copyright Infomation
+startyear: 2017
