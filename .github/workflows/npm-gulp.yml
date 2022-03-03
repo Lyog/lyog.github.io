@@ -20,20 +20,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Configuration environment
-        env:
-          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name "Lyog"
-          git config --global user.email "liuyong.2020@qq.com"
-      - name: Install dependencies
-        run: |
-          npm i -g hexo-cli
-          npm i
-      - name: Deploy hexo
-        run: |
-          hexo clean && hexo generate && hexo deploy
+      - name: hexo deploy with-hook
+        # You may pin to the exact commit or the version.
+        # uses: yuzhishuo/hexo-deploy-with-hook@c3937eca326bf45978aa1f9d592eb88dbbab5f13
+        uses: yuzhishuo/hexo-deploy-with-hook@2.0.1
