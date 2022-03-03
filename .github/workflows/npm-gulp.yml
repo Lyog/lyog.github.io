@@ -20,7 +20,16 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: hexo deploy with-hook
+      - name: Hexo Action
         # You may pin to the exact commit or the version.
-        # uses: yuzhishuo/hexo-deploy-with-hook@c3937eca326bf45978aa1f9d592eb88dbbab5f13
-        uses: yuzhishuo/hexo-deploy-with-hook@2.0.1
+        # uses: sma11black/hexo-action@08f5143fa402cdaccf9fc016d6bc91329f082eb0
+        uses: sma11black/hexo-action@v1.0.4
+        with:
+          # Github user name
+          user_name: Lyog
+          # Github email
+          user_email: liuyong.2020@qq.com
+          # The deploy key for Github Pages repo
+          deploy_key: ${{secrets.HEXO_DEPLOY_PRI}}
+          # Git commit messages to your GitHub Pages repository.
+          commit_msg:  optional
