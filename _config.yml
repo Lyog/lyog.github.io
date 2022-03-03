@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 沉思の盒子1
+title: 沉思の盒子
 subtitle:
 description:
 keywords:
@@ -92,4 +92,4 @@ deploy:
   type: git
   repo: https://github.com/Lyog/lyog.github.io.git
   # example, https://github.com/hexojs/hexojs.github.io
-  branch: gh-pages
+  branch: hexo
