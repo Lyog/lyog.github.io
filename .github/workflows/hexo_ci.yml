@@ -34,6 +34,8 @@ jobs:
         run: |
           npm i -g hexo-cli
           npm i
+          rm -rf .deploy_git/
+          git config --global core.autocrlf false
       - name: Deploy hexo
         run: |
           hexo clean && hexo generate && hexo deploy
