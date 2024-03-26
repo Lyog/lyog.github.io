@@ -92,4 +92,5 @@ deploy:
   type: git
   repo: git@github.com:Lyog/lyog.github.io.git
   # example, https://github.com/hexojs/hexojs.github.io
-  branch: hexo
+  branch: gh-pages
+  message: ${{ github.event.head_commit.message }}
