@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 沉思の盒子
+title: 浅思录
 subtitle:
 description:
 keywords:
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://lyog.github.io
+url: https://blog.liuyong.cc
 root: /
 permalink: post/:abbrlink.html
 abbrlink:
