@@ -12,19 +12,19 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         # with:
         #   submodules: true
         #   fetch-depth: 0
       # 每个name表示一个步骤:step
       - name: Use Node.js 10.x
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '10.24.1' # 自己正在使用的node版本即可
       # - run: node -v # 查看node版本号
       # 缓存依赖项: https://docs.github.com/cn/actions/using-workflows/caching-dependencies-to-speed-up-workflows
       - name: Cache NPM dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           # npm cache files are stored in `~/.npm` on Linux/macOS
           path: ~/.npm
@@ -58,7 +58,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY  }}
           user_name: Lyog
-          user_email: liuyong.2020@qq.com
+          user_email: liuyong.2017@qq.com
           # 获取提交文章源码时的commit message，作为发布gh-pages分支的信息
           commit_message: ${{ github.event.head_commit.message }}
           full_commit_message: ${{ github.event.head_commit.message }}
